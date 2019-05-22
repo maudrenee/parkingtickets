@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-KBFMG6C.ParkingTicetsSource1"
+  DTS:DTSID="{704A5141-366A-4C9A-B1B6-14285539D510}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DESKTOPKBFMG6CParkingTicetsSource1_ConnectionString1]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-KBFMG6C;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-Integration Services Project9-{704A5141-366A-4C9A-B1B6-14285539D510}DESKTOP-KBFMG6C.ParkingTicetsSource1;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

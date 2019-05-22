@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="LoadFlatFile1-4 connectionM"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{5AF73494-E288-4ADA-8513-82CBC3C5839D}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{5BC00F7D-85E5-4AEC-8AE1-BD633F5EA3E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1467,7 +1467,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="G:\Parking tickets\Parking_Violations_Issued_-_Fiscal_Year_2017.csv">
+          DTS:ConnectionString="C:\Temp\Parkingdata\Parking_Violations_Issued_-_Fiscal_Year_2017.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1476,7 +1476,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Summons Number"
-              DTS:DTSID="{3B42295D-CCA0-4404-8A23-F3B2EA9A5AE4}"
+              DTS:DTSID="{CBB8035D-ED79-4052-A76C-B09888B8F901}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1485,7 +1485,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Plate ID"
-              DTS:DTSID="{AC295503-02F9-4DE7-A4F2-098C4A088D6F}"
+              DTS:DTSID="{E09F98DF-1D65-4C2A-8B8C-DAB78381DF30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1494,7 +1494,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Registration State"
-              DTS:DTSID="{33513E66-F8AD-4569-853D-57EF9851B791}"
+              DTS:DTSID="{BAFD7B45-0FD5-45AF-99DE-3DC557E50BD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1503,7 +1503,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Plate Type"
-              DTS:DTSID="{C8024829-D36B-4BE0-9C91-A1140B42A02C}"
+              DTS:DTSID="{957D8778-29DD-4070-B38D-811838EAE4E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1512,7 +1512,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issue Date"
-              DTS:DTSID="{4671D274-7DC3-4496-A19D-76BE18A459B7}"
+              DTS:DTSID="{3C21BE4F-6ED7-467A-B20C-23B48A2C458F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1521,7 +1521,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Code"
-              DTS:DTSID="{012D9F2C-6F5D-46D9-B209-6DF0BF23EDAC}"
+              DTS:DTSID="{EBF30B34-7DA4-4203-98B2-931735DAEBB8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1530,7 +1530,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle Body Type"
-              DTS:DTSID="{D4565E81-8364-45D9-B929-12A22EE75B6A}"
+              DTS:DTSID="{F890B8A1-A7C0-454D-B6A1-12BFAF824CD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1539,7 +1539,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle Make"
-              DTS:DTSID="{78756C9C-96DC-4DD1-BDC9-63C7D8B393F8}"
+              DTS:DTSID="{941C3805-4FD8-4700-8BFA-FED1EC8ECC43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1548,7 +1548,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issuing Agency"
-              DTS:DTSID="{7A548F43-EB49-4CB6-AF67-4B0D2359231F}"
+              DTS:DTSID="{9129A6E4-24E4-4546-84C4-C42175A5A332}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1557,7 +1557,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Street Code1"
-              DTS:DTSID="{06F96ED2-2ED3-4637-8573-8C2A5BCC3716}"
+              DTS:DTSID="{1FBC1EDB-C2A1-4AD2-8F8B-531240BC9B46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1566,7 +1566,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Street Code2"
-              DTS:DTSID="{73F82138-1FF3-45E9-A279-0E6876BAB49E}"
+              DTS:DTSID="{A5434942-665D-4F54-B632-CA5C67BA4BCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1575,7 +1575,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Street Code3"
-              DTS:DTSID="{582F3EDE-C16B-4142-A162-5AEB3B3B0D4D}"
+              DTS:DTSID="{692A3262-DAA2-462F-B0BF-ED51DEA4A036}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1584,7 +1584,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle Expiration Date"
-              DTS:DTSID="{FB9993BB-C9C2-40DC-A223-CBC494C29B3C}"
+              DTS:DTSID="{034429F1-047A-4680-BED2-4C11CB9ECFEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1593,7 +1593,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Location"
-              DTS:DTSID="{38082AD1-2C8C-4088-9873-A606351296E3}"
+              DTS:DTSID="{64BECE7D-8CC7-4E07-A217-22B731CB99A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1602,7 +1602,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Precinct"
-              DTS:DTSID="{DC30A6BD-6C30-42CA-AC30-899C1C8E4DE2}"
+              DTS:DTSID="{C9D7799E-2078-49BE-9989-EBF401BB762D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1611,7 +1611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issuer Precinct"
-              DTS:DTSID="{85F4CE2C-16D1-4D66-AFC3-69C7B857FB2A}"
+              DTS:DTSID="{7354684E-164B-47E4-9515-D2DCEB5B6704}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1620,7 +1620,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issuer Code"
-              DTS:DTSID="{C0D5FD9C-8272-4729-A962-086D64DD97B2}"
+              DTS:DTSID="{F7CF8FED-9C33-4A13-907A-541345709059}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1629,7 +1629,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issuer Command"
-              DTS:DTSID="{05940C7D-19FB-4FC6-8AFB-DC2D44F5DBA7}"
+              DTS:DTSID="{0CEF249C-32CD-4805-9B2D-A36347677237}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1638,7 +1638,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Issuer Squad"
-              DTS:DTSID="{5FA0739F-C9D7-4D5E-865C-029A66FFAE7F}"
+              DTS:DTSID="{CBC0D470-8F5F-47A6-B531-D9A534346B88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1647,7 +1647,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Time"
-              DTS:DTSID="{FA52CCA7-7BCA-440F-882A-BFAAA6C79C67}"
+              DTS:DTSID="{D8F38359-F1C5-4BAF-9BEF-3179F666C2DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1656,7 +1656,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Time First Observed"
-              DTS:DTSID="{69731A30-00F9-46D3-8C39-10EBCE6FC48B}"
+              DTS:DTSID="{AAC91EA7-554E-4FB3-82BB-9995A58EA04B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1665,7 +1665,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation County"
-              DTS:DTSID="{AEDF8B39-6EE3-475F-8352-BB0B0E44DC00}"
+              DTS:DTSID="{60FDE863-3E75-4C0F-A668-777B18938AF5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1674,7 +1674,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation In Front Of Or Opposite"
-              DTS:DTSID="{E1DCF72B-F8FD-4B2B-BBD9-7EB120FA22E1}"
+              DTS:DTSID="{8BE851FE-7B08-472D-91E4-FE1A4A35E39F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1683,7 +1683,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="House Number"
-              DTS:DTSID="{88ECE2E5-FBE8-4872-BDD0-FBEF44AEE6F2}"
+              DTS:DTSID="{ED71A502-A291-408B-83DC-A68C17552E02}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1692,7 +1692,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Street Name"
-              DTS:DTSID="{F4A0D179-2B5D-4388-B846-D46720C92730}"
+              DTS:DTSID="{8C6660B2-511D-4BC4-87BC-541F90A450C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1701,7 +1701,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Intersecting Street"
-              DTS:DTSID="{044CAE78-9B65-4CDC-B7BA-18178E306AE7}"
+              DTS:DTSID="{4F091462-1246-4572-9240-DB5B209D2A37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1710,7 +1710,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date First Observed"
-              DTS:DTSID="{A4B3C8C6-D873-4617-BB46-14A8748F720A}"
+              DTS:DTSID="{92C0CFEB-A488-407A-B832-1170387530F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1719,7 +1719,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Law Section"
-              DTS:DTSID="{D57626EA-2D44-4C9F-9360-363784F11201}"
+              DTS:DTSID="{A3972A32-8FD7-4AC2-9717-B39DBA61BEC5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1728,7 +1728,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sub Division"
-              DTS:DTSID="{AB8CD72F-997D-441D-B9B6-6164A152F9F5}"
+              DTS:DTSID="{B974E167-4BAF-4371-9A79-00050347D4BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1737,7 +1737,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Legal Code"
-              DTS:DTSID="{3065D397-8A05-45CE-BF39-41E764E532DD}"
+              DTS:DTSID="{89658188-4147-4561-A0FB-1375731F5B16}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1746,7 +1746,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Days Parking In Effect    "
-              DTS:DTSID="{ABC5F394-5810-4766-9963-5A3A6E6FE3C6}"
+              DTS:DTSID="{41D13490-C0BA-4DC5-9B37-C328723849AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1755,7 +1755,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="From Hours In Effect"
-              DTS:DTSID="{EE4A3CF5-8BC8-4D2D-BEBC-6A1E720DA850}"
+              DTS:DTSID="{1E38B26A-CB01-4A1D-9558-BE21A9A4538B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1764,7 +1764,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="To Hours In Effect"
-              DTS:DTSID="{3C510002-7694-4761-943A-E038A0458527}"
+              DTS:DTSID="{486979E0-4C47-4708-83A1-A236333A9C22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1773,7 +1773,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle Color"
-              DTS:DTSID="{1729467A-C8D8-4E1D-BC1B-1D19D5B13522}"
+              DTS:DTSID="{320F0363-08D5-4160-A25D-DC31DC4FD736}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1782,7 +1782,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unregistered Vehicle?"
-              DTS:DTSID="{EA231552-BB9A-488E-AA67-61D1631FEA35}"
+              DTS:DTSID="{3005C701-BB52-4D73-A182-66A66F3F8D28}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1791,7 +1791,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Vehicle Year"
-              DTS:DTSID="{500BAA13-0BCD-4F1B-90D1-FF093835EA24}"
+              DTS:DTSID="{869E64AF-0D8D-4F4F-85C8-BA9DDA5AEAD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1800,7 +1800,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Meter Number"
-              DTS:DTSID="{CE8BE4BF-FE19-4005-9A72-C35D7CCF642C}"
+              DTS:DTSID="{D14B58B2-AB72-4918-95A9-B96628148F09}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1809,7 +1809,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Feet From Curb"
-              DTS:DTSID="{85BB06E0-57C0-4E3B-9643-35517D14AA55}"
+              DTS:DTSID="{EAD3968E-76FE-4C21-BD3E-C12680A81270}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1818,7 +1818,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Post Code"
-              DTS:DTSID="{F2A30427-A3ED-428F-8D6B-96D1D5E6F52A}"
+              DTS:DTSID="{628569BF-3137-4150-8AD5-8F0F65D437C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1827,7 +1827,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Violation Description"
-              DTS:DTSID="{EA4BDC9C-B172-4A17-B302-0468B798BD13}"
+              DTS:DTSID="{5A7F8625-8C45-42DE-9F1A-4BEDED2B3733}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1836,7 +1836,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="No Standing or Stopping Violation"
-              DTS:DTSID="{67FF3DDF-DB78-4EF8-8E42-D0AAFFB50F6D}"
+              DTS:DTSID="{E65FBA08-D84A-4CA8-BA93-1CAF6999C084}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1845,7 +1845,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Hydrant Violation"
-              DTS:DTSID="{5E2EC962-4C2B-4FFE-B5E0-7C13857B3F04}"
+              DTS:DTSID="{435035AA-124F-47D6-B7AF-A95F2064849C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1854,20 +1854,10 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Double Parking Violation"
-              DTS:DTSID="{94275522-D119-48F5-B48D-BC702E35B25D}"
+              DTS:DTSID="{394F62AF-F1E2-4E19-95CB-B55284481C4A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{775814AA-D2CB-44E7-8A5D-ABE53C4206D2}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=parkingtickets;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -2826,7 +2816,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[parkingtickets]</property>
+                  name="OpenRowset">[dbo].[importParkingTickets]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2869,8 +2859,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
+                  connectionManagerID="{A6ACAE8B-5093-48E7-A9EC-27A61C70D7F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicetsSource 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2965,58 +2955,258 @@
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Summons Number]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Summons Number" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Registration State]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Registration State" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issue Date]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Issue Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Violation Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Body Type]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Vehicle Body Type" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Make]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Vehicle Make" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Precinct]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Violation Precinct" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Violation Time" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation County]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Violation County" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Street Name]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Street Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
                       dataType="wstr"
-                      length="50"
+                      length="250"
                       name="Vehicle Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plate ID]"
+                      dataType="wstr"
+                      length="250"
+                      name="Plate ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plate Type]"
+                      dataType="wstr"
+                      length="250"
+                      name="Plate Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issuing Agency]"
+                      dataType="wstr"
+                      length="250"
+                      name="Issuing Agency" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Street Code1]"
+                      dataType="wstr"
+                      length="250"
+                      name="Street Code1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Street Code2]"
+                      dataType="wstr"
+                      length="250"
+                      name="Street Code2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Street Code3]"
+                      dataType="wstr"
+                      length="250"
+                      name="Street Code3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Expiration Date]"
+                      dataType="wstr"
+                      length="250"
+                      name="Vehicle Expiration Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Location]"
+                      dataType="wstr"
+                      length="250"
+                      name="Violation Location" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issuer Precinct]"
+                      dataType="wstr"
+                      length="250"
+                      name="Issuer Precinct" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issuer Code]"
+                      dataType="wstr"
+                      length="250"
+                      name="Issuer Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issuer Command]"
+                      dataType="wstr"
+                      length="250"
+                      name="Issuer Command" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Issuer Squad]"
+                      dataType="wstr"
+                      length="250"
+                      name="Issuer Squad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Time First Observed]"
+                      dataType="wstr"
+                      length="250"
+                      name="Time First Observed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation In Front Of Or Opposite]"
+                      dataType="wstr"
+                      length="250"
+                      name="Violation In Front Of Or Opposite" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[House Number]"
+                      dataType="wstr"
+                      length="250"
+                      name="House Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Intersecting Street]"
+                      dataType="wstr"
+                      length="250"
+                      name="Intersecting Street" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date First Observed]"
+                      dataType="wstr"
+                      length="250"
+                      name="Date First Observed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Law Section]"
+                      dataType="wstr"
+                      length="250"
+                      name="Law Section" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sub Division]"
+                      dataType="wstr"
+                      length="250"
+                      name="Sub Division" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Legal Code]"
+                      dataType="wstr"
+                      length="250"
+                      name="Violation Legal Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Days Parking In Effect    ]"
+                      dataType="wstr"
+                      length="250"
+                      name="Days Parking In Effect    " />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[From Hours In Effect]"
+                      dataType="wstr"
+                      length="250"
+                      name="From Hours In Effect" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[To Hours In Effect]"
+                      dataType="wstr"
+                      length="250"
+                      name="To Hours In Effect" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Color]"
+                      dataType="wstr"
+                      length="250"
+                      name="Vehicle Color" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Unregistered Vehicle?]"
+                      dataType="wstr"
+                      length="250"
+                      name="Unregistered Vehicle?" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Meter Number]"
+                      dataType="wstr"
+                      length="250"
+                      name="Meter Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Feet From Curb]"
+                      dataType="wstr"
+                      length="250"
+                      name="Feet From Curb" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Post Code]"
+                      dataType="wstr"
+                      length="250"
+                      name="Violation Post Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Violation Description]"
+                      dataType="wstr"
+                      length="250"
+                      name="Violation Description" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[No Standing or Stopping Violation]"
+                      dataType="wstr"
+                      length="250"
+                      name="No Standing or Stopping Violation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hydrant Violation]"
+                      dataType="wstr"
+                      length="250"
+                      name="Hydrant Violation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Double Parking Violation]"
+                      dataType="wstr"
+                      length="250"
+                      name="Double Parking Violation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                      dataType="wstr"
+                      length="250"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
+                      dataType="wstr"
+                      length="250"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Community Board]"
+                      dataType="wstr"
+                      length="250"
+                      name="Community Board" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Community Council ]"
+                      dataType="wstr"
+                      length="250"
+                      name="Community Council " />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Census Tract]"
+                      dataType="wstr"
+                      length="250"
+                      name="Census Tract" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BIN]"
+                      dataType="wstr"
+                      length="250"
+                      name="BIN" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BBL]"
+                      dataType="wstr"
+                      length="250"
+                      name="BBL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTA]"
+                      dataType="wstr"
+                      length="500"
+                      name="NTA" />
                   </externalMetadataColumns>
                 </input>
               </inputs>

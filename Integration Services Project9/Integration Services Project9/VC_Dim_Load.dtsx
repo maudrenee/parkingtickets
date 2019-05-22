@@ -11,42 +11,10 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="VC_Dim_Load"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D9888BFD-11A2-4C91-B047-5D3CC8635CAE}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{D4577275-517D-49D4-AA71-171C11F3C312}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7751F970-1136-4989-B7E0-54DF45B9C6E3}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicetsSource;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{07007E72-F374-4281-846B-D32174192A97}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=parkingtickets;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{4321A846-62A3-4907-AB82-BA674BD81315}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicketStructured;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -114,8 +82,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Staging VC.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
+                  connectionManagerID="{A6ACAE8B-5093-48E7-A9EC-27A61C70D7F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicetsSource 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -166,7 +134,7 @@
                       name="Violation Description" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[ParkingFine]"
-                      dataType="r8"
+                      dataType="i4"
                       name="ParkingFine" />
                   </externalMetadataColumns>
                 </output>
@@ -188,7 +156,7 @@
                       name="Violation Description" />
                     <outputColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[ParkingFine]"
-                      dataType="r8"
+                      dataType="i4"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[ParkingFine]"
                       name="ParkingFine" />
                     <outputColumn
@@ -224,7 +192,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[ViolationCodes]</property>
+                  name="OpenRowset">[dbo].[ViolationDim]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -267,8 +235,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\VC DIM LOAD.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.parkingtickets]"
+                  connectionManagerID="{04370E7A-8030-42E8-B9CE-A1740E897BC3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicketStructured 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>

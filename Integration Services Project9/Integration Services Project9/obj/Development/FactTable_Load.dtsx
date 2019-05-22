@@ -11,42 +11,21 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="FactTable_Load"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{96CB5327-B416-42E8-AEF0-1F8B4A8B0DEC}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{8F9B5908-A3AF-4227-9C1A-3EFCC03FF14D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{75F7C8FC-6CAC-4980-A54C-BDFF426F2B06}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-FactTable_Load-{75F7C8FC-6CAC-4980-A54C-BDFF426F2B06}FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{2165B79E-064E-414D-967A-013D00B8AB14}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicketStructured;Integrated Security=True;Application Name=SSIS-FactTable_Load-{2165B79E-064E-414D-967A-013D00B8AB14}FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B456934B-50D0-4D5E-ACE1-3F912DD551CB}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicketStructured;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{952747C6-F111-4128-BF68-A4F2FD40AAE5}"
+      DTS:ObjectName="FREDRIKHPFREDRIKS_DATABASParkingTicetsSource_ConnectionString">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-FactTable_Load-{75F7C8FC-6CAC-4980-A54C-BDFF426F2B06}FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource;</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -100,8 +79,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\ADO NET Destination.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured]"
+                  connectionManagerID="{BFD2DC39-A6C5-4419-8FBB-4B5E4C609853}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicketStructured1]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -112,6 +91,13 @@
                   hasSideEffects="true"
                   name="ADO NET Destination Input">
                   <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Violation Time]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="Violation Time"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Violation Time]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[LocationID]"
                       cachedDataType="i4"
@@ -124,32 +110,6 @@
                       cachedName="CarID"
                       externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[CarID]"
                       lineageId="Package\Data Flow Task\Lookup_Car.Outputs[Lookup Match Output].Columns[CarID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Violation Code]"
-                      cachedDataType="wstr"
-                      cachedLength="250"
-                      cachedName="Violation Code"
-                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ViolationID]"
-                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Violation Code]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Summons Number]"
-                      cachedDataType="wstr"
-                      cachedLength="250"
-                      cachedName="Summons Number"
-                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FactID]"
-                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Summons Number]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Issue Date DT_DATE]"
-                      cachedDataType="date"
-                      cachedName="Issue Date DT_DATE"
-                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DateID]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Issue Date DT_DATE]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Violation Time DT_DBTIME]"
-                      cachedDataType="dbTime"
-                      cachedName="Violation Time DT_DBTIME"
-                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Violation Time]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Violation Time DT_DBTIME]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -246,8 +206,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\ADO NET Source.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
+                  connectionManagerID="{704A5141-366A-4C9A-B1B6-14285539D510}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicetsSource1]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -1594,7 +1554,7 @@ where [refTable].[Registration State] = ? and [refTable].[Vehicle Body Type] = ?
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\773:invalid};#{Package\Data Flow Task\774:invalid};#{Package\Data Flow Task\775:invalid};#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Vehicle Year DT_I2]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Registration State]};#{Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Vehicle Body Type]};#{Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Vehicle Make]};#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Vehicle Year DT_I2]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1607,8 +1567,8 @@ where [refTable].[Registration State] = ? and [refTable].[Vehicle Body Type] = ?
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Lookup_Car.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1]"
+                  connectionManagerID="{04370E7A-8030-42E8-B9CE-A1740E897BC3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicketStructured 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1803,7 +1763,7 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\776:invalid};#{Package\Data Flow Task\777:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Violation County]};#{Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Street Name]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1816,8 +1776,8 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Lookup_Location.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicketStructured1]"
+                  connectionManagerID="{04370E7A-8030-42E8-B9CE-A1740E897BC3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicketStructured 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1980,126 +1940,20 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
-          Id="Package\Data Flow Task\ADO NET Source"
-          TopLeft="350,18" />
-        <NodeLayout
-          Size="158,42"
           Id="Package\Data Flow Task\Lookup_Location"
           TopLeft="449,124" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[ADO NET Source Output]"
-          TopLeft="429,60">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="99,64"
-              Start="0,0"
-              End="99,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
-                  <mssgle:LineSegment
-                    End="95,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="95,32"
-                    Point2="99,32"
-                    Point3="99,36" />
-                  <mssgle:LineSegment
-                    End="99,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="41.5,37,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="135,42"
           Id="Package\Data Flow Task\Lookup_Car"
           TopLeft="446,291" />
         <NodeLayout
+          Size="158,42"
+          Id="Package\Data Flow Task\ADO NET Source"
+          TopLeft="350,18" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\Data Conversion"
           TopLeft="591,210" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="528,166">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141,44"
-              Start="0,0"
-              End="141,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18"
-                    Point2="0,22"
-                    Point3="4,22" />
-                  <mssgle:LineSegment
-                    End="137,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137,22"
-                    Point2="141,22"
-                    Point3="141,26" />
-                  <mssgle:LineSegment
-                    End="141,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.30861328125,27,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="669,252">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-155.5,39"
-              Start="0,0"
-              End="-155.5,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.5"
-                    Point2="0,19.5"
-                    Point3="-4,19.5" />
-                  <mssgle:LineSegment
-                    End="-151.5,19.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-151.5,19.5"
-                    Point2="-155.5,19.5"
-                    Point3="-155.5,23.5" />
-                  <mssgle:LineSegment
-                    End="-155.5,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="179,42"
           Id="Package\Data Flow Task\ADO NET Destination"
@@ -2145,6 +1999,42 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="528,166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141,44"
+              Start="0,0"
+              End="141,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18"
+                    Point2="0,22"
+                    Point3="4,22" />
+                  <mssgle:LineSegment
+                    End="137,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137,22"
+                    Point2="141,22"
+                    Point3="141,26" />
+                  <mssgle:LineSegment
+                    End="141,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.30861328125,27,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
           TopLeft="813,383">
           <EdgeLayout.Curve>
@@ -2178,17 +2068,79 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="669,252">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-155.5,39"
+              Start="0,0"
+              End="-155.5,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5"
+                    Point2="0,19.5"
+                    Point3="-4,19.5" />
+                  <mssgle:LineSegment
+                    End="-151.5,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-151.5,19.5"
+                    Point2="-155.5,19.5"
+                    Point3="-155.5,23.5" />
+                  <mssgle:LineSegment
+                    End="-155.5,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[ADO NET Source Output]"
+          TopLeft="429,60">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99,64"
+              Start="0,0"
+              End="99,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="95,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95,32"
+                    Point2="99,32"
+                    Point3="99,36" />
+                  <mssgle:LineSegment
+                    End="99,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="41.5,37,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Lookup_Location">
     <Properties>
@@ -2230,6 +2182,14 @@ where [refTable].[County] = ? and [refTable].[Street Name] = ?</property>
         <Value
           type="q4:int">0</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ADO NET Source">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

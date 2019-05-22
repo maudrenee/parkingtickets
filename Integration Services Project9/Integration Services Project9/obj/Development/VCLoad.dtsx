@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="VCLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{4D9EEF75-6A96-4207-A85E-A1ADEAF856EA}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{5D348B88-44AC-4228-B8F1-18300B23E6AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -61,16 +61,6 @@
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{6B7F43BA-B23F-4558-8593-AC3E7A93BED8}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-Package4-{6B7F43BA-B23F-4558-8593-AC3E7A93BED8}FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -127,8 +117,8 @@
               <connections>
                 <connection
                   refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
+                  connectionManagerID="{704A5141-366A-4C9A-B1B6-14285539D510}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicetsSource1]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -155,14 +145,6 @@
                       cachedName="VIOLATION DESCRIPTION"
                       externalMetadataColumnId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[Violation Description]"
                       lineageId="Package\Inladdnning av Violationscodes till SQL\ViolationCodes Source.Outputs[Flat File Source Output].Columns[VIOLATION DESCRIPTION]" />
-                    <inputColumn
-                      refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].Columns[All Areas]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="All Areas"
-                      externalMetadataColumnId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[ParkingFine]"
-                      lineageId="Package\Inladdnning av Violationscodes till SQL\ViolationCodes Source.Outputs[Flat File Source Output].Columns[All Areas]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -177,7 +159,7 @@
                       name="Violation Description" />
                     <externalMetadataColumn
                       refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[ParkingFine]"
-                      dataType="r8"
+                      dataType="i4"
                       name="ParkingFine" />
                   </externalMetadataColumns>
                 </input>

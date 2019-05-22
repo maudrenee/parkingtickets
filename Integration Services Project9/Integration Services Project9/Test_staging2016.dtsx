@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="Test_staging2016"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{1DBAF013-48D1-43C3-9115-49353AC60A08}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{97A7E7D3-5794-4157-B4EF-C051D271AF64}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -495,16 +495,6 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{5DB9A275-6866-4C2A-809E-E4DF82D739E9}"
-      DTS:ObjectName="FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=FREDRIK-HP\FREDRIKS_DATABAS;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-Package1-{5DB9A275-6866-4C2A-809E-E4DF82D739E9}FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -559,8 +549,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\ADO NET Destination.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
-                  connectionManagerRefId="Package.ConnectionManagers[FREDRIK-HP\FREDRIKS_DATABAS.ParkingTicetsSource]"
+                  connectionManagerID="{704A5141-366A-4C9A-B1B6-14285539D510}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-KBFMG6C.ParkingTicetsSource1]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
