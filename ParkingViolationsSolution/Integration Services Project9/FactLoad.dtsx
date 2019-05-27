@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="FactLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{9FF1AF7E-05F0-4A23-A033-E0B094B813A0}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{1ABBC44E-39CC-459B-96A8-C84259C5994B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1888,13 +1888,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
+                          name="Expression">[LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "Q" ? "Queens" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\ParkingViolations Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Violation County],1) == "K" ? "Kings" : LEFT([Violation County],1) == "M" ? "Manhattan" : LEFT([Violation County],1) == "N" ? "New York City" : LEFT([Violation County],1) == "R" ? "Richmond" : LEFT([Violation County],2) == "BK" ? "Brooklyn" : LEFT([Violation County],1) == "S" ? "Staten Island" : RIGHT([Violation County],1) == "X" ? "Bronx" : LEFT([Violation County],1) == "N" ? "New York City" : "N/A"</property>
+                          name="FriendlyExpression">LEFT([Violation County],1) == "Q" ? "Queens" : LEFT([Violation County],1) == "K" ? "Kings" : LEFT([Violation County],1) == "M" ? "Manhattan" : LEFT([Violation County],1) == "N" ? "New York City" : LEFT([Violation County],1) == "R" ? "Richmond" : LEFT([Violation County],2) == "BK" ? "Brooklyn" : LEFT([Violation County],1) == "S" ? "Staten Island" : RIGHT([Violation County],1) == "X" ? "Bronx" : LEFT([Violation County],1) == "N" ? "New York City" : "N/A"</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3047,20 +3047,20 @@ where [refTable].[County] = ?</property>
           TopLeft="202,518" />
         <NodeLayout
           Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 3"
-          TopLeft="656,209" />
+          Id="Package\Data Flow Task\ErrorRows 1"
+          TopLeft="655,74" />
+        <NodeLayout
+          Size="296,42"
+          Id="Package\Data Flow Task\Filtrera bort Vehicle Year utanför rimligt range"
+          TopLeft="116,209" />
         <NodeLayout
           Size="249,42"
           Id="Package\Data Flow Task\Konverterar Violation time &amp; County"
           TopLeft="134,356" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Data Conversion 1"
-          TopLeft="181,73" />
-        <NodeLayout
           Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 4"
-          TopLeft="655,284" />
+          Id="Package\Data Flow Task\ErrorRows 2"
+          TopLeft="650,140" />
         <NodeLayout
           Size="194,42"
           Id="Package\Data Flow Task\ParkingViolations Source"
@@ -3071,6 +3071,22 @@ where [refTable].[County] = ?</property>
           TopLeft="203,598" />
         <NodeLayout
           Size="137,42"
+          Id="Package\Data Flow Task\ErrorRows 3"
+          TopLeft="656,209" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\Data Flow Task\Filtrerea bort felaktiga Violation Codes"
+          TopLeft="140,285" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion 1"
+          TopLeft="181,73" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Data Flow Task\ErrorRows 4"
+          TopLeft="655,284" />
+        <NodeLayout
+          Size="137,42"
           Id="Package\Data Flow Task\ErrorRows 5"
           TopLeft="649,417" />
         <NodeLayout
@@ -3078,29 +3094,13 @@ where [refTable].[County] = ?</property>
           Id="Package\Data Flow Task\Filtrerar bort Issue Date som inte ingår i vårt önskade Tids-intervall"
           TopLeft="67,138" />
         <NodeLayout
-          Size="259,42"
-          Id="Package\Data Flow Task\Filtrerea bort felaktiga Violation Codes"
-          TopLeft="140,285" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Data Flow Task\FactTable Destination"
-          TopLeft="175,664" />
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 1"
-          TopLeft="655,74" />
-        <NodeLayout
-          Size="296,42"
-          Id="Package\Data Flow Task\Filtrera bort Vehicle Year utanför rimligt range"
-          TopLeft="116,209" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task\Conditional Split"
           TopLeft="206,429" />
         <NodeLayout
-          Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 2"
-          TopLeft="650,140" />
+          Size="181,42"
+          Id="Package\Data Flow Task\FactTable Destination"
+          TopLeft="175,664" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
           TopLeft="268,640">
@@ -3513,7 +3513,7 @@ where [refTable].[County] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 3">
+    design-time-name="Package\Data Flow Task\ErrorRows 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3526,7 +3526,7 @@ where [refTable].[County] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 4">
+    design-time-name="Package\Data Flow Task\ErrorRows 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3562,6 +3562,32 @@ where [refTable].[County] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ErrorRows 3">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ErrorRows 4">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\ErrorRows 5">
     <Properties>
       <Property>
@@ -3576,32 +3602,6 @@ where [refTable].[County] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\FactTable Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

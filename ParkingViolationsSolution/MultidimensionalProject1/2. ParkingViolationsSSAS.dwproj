@@ -32,12 +32,12 @@
       <FullPath>Violation Dim.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Time Dim.dim</Name>
-      <FullPath>Time Dim.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Date Dim.dim</Name>
       <FullPath>Date Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim.dim</Name>
+      <FullPath>Time Dim.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

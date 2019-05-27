@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="Main"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{DF04EC73-ED11-468A-8930-90F41583BDBD}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{BA3C4B6B-0192-4E4C-BD18-717C41B1D5FC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -53,6 +53,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{91AB6B97-A357-42E9-83EC-3D4B7A055B46}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -87,7 +88,6 @@
       DTS:refId="Package\Load CSV into Fact"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
-      DTS:Disabled="True"
       DTS:DTSID="{6395EF0D-949D-491A-BCFF-B0F028B7743D}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"

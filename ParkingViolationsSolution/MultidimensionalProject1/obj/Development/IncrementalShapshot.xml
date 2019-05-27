@@ -19,56 +19,56 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>RcnPcFzlKhAofNh4NcV4t+lULgE=5/27/2019 9:36:03 PM5/27/2019 9:30:32 PM</TimeStamp>
+        <TimeStamp>nvRsVguudIgg9l74jXji0PAjwE8=5/28/2019 12:29:08 AM5/28/2019 12:29:08 AM</TimeStamp>
         <ID>
           <String>Parking Violations DB</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>A6dMaOOuDHWRoIL/EGyuC/8EcZM=5/27/2019 9:31:24 PM5/27/2019 9:30:47 PM</TimeStamp>
+        <TimeStamp>NVnoF7OjoTd+y02KAVjJDW/n2ao=5/28/2019 12:42:19 AM5/28/2019 12:31:35 AM</TimeStamp>
         <ID>
           <String>Parking Violations DB</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bgTDzBlEvHq8dRFWnqzJllG15uE=5/27/2019 10:01:44 PM5/27/2019 9:31:24 PM</TimeStamp>
+        <TimeStamp>TGzIHTZjyjoxFbHqemQ9YsSC/rM=5/28/2019 12:35:00 AM5/28/2019 12:32:10 AM</TimeStamp>
         <ID>
           <String>Car Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>xARqSUdz+n3QvIyWlu064eTynEI=5/27/2019 10:01:44 PM5/27/2019 9:31:24 PM</TimeStamp>
+        <TimeStamp>WhXcv89ixh6vdZcuVW84oMeq4tY=5/28/2019 12:35:00 AM5/28/2019 12:32:10 AM</TimeStamp>
         <ID>
           <String>Location Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jaiFAmAxW/exeH9WhIIFuUOQh7g=5/27/2019 10:01:44 PM5/27/2019 9:31:24 PM</TimeStamp>
+        <TimeStamp>c1zQNUYf2VBa9apXof7caOdnFMk=5/28/2019 12:35:00 AM5/28/2019 12:32:10 AM</TimeStamp>
         <ID>
           <String>Violation Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>7tSrPE4+IBbjz0Kg9mRxexpuCns=5/27/2019 10:09:37 PM5/27/2019 10:09:37 PM</TimeStamp>
-        <ID>
-          <String>Time Dim</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>RD5pO5xpsQ9U7+wxgis7eH0k9Ag=5/27/2019 11:57:24 PM5/27/2019 10:12:24 PM</TimeStamp>
+        <TimeStamp>hFFmqG5sr6VXlJaUHRodgbd3Qlo=5/28/2019 12:42:19 AM5/28/2019 12:40:50 AM</TimeStamp>
         <ID>
           <String>Date Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>k31fiR2JxHYdnLBylQQCc3HZSWk=5/28/2019 12:41:18 AM5/28/2019 12:41:18 AM</TimeStamp>
+        <ID>
+          <String>Time Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>cv0vkfumaVFxlFx8QdEgGGSPeYQ=5/27/2019 11:40:07 PM5/27/2019 9:31:23 PMwhVxr9hwur5WJufxevQTgbEx5eM=5/27/2019 9:31:24 PM5/27/2019 9:31:23 PM</TimeStamp>
+        <TimeStamp>9PPXpYFYZRyNYEbtFdCYMrNLmaU=5/28/2019 12:43:54 AM5/28/2019 12:32:10 AMANkmEoUZLsPg+TxRVCNA8vBRyI0=5/28/2019 12:32:10 AM5/28/2019 12:32:10 AM</TimeStamp>
         <ID>
           <String>Parking Violations DB</String>
         </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2019-05-27T21:57:46.993333Z</LastDeployed>
+  <LastDeployed>2019-05-27T22:53:56.996667Z</LastDeployed>
 </DeploymentSnapshot>

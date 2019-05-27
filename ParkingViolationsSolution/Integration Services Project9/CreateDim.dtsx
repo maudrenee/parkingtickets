@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="CreateDim"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{D26123A0-FE92-4095-83B4-0F58B4C8F927}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{993DDEF3-E529-46C3-8133-450A87932CA8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -1362,13 +1362,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
+                          name="Expression">[LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "Q" ? "Queens" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Violation County],1) == "K" ? "Kings" : LEFT([Violation County],1) == "M" ? "Manhattan" : LEFT([Violation County],1) == "N" ? "New York City" : LEFT([Violation County],1) == "R" ? "Richmond" : LEFT([Violation County],2) == "BK" ? "Brooklyn" : LEFT([Violation County],1) == "S" ? "Staten Island" : RIGHT([Violation County],1) == "X" ? "Bronx" : LEFT([Violation County],1) == "N" ? "New York City" : "N/A"</property>
+                          name="FriendlyExpression">LEFT([Violation County],1) == "Q" ? "Queens" : LEFT([Violation County],1) == "K" ? "Kings" : LEFT([Violation County],1) == "M" ? "Manhattan" : LEFT([Violation County],1) == "N" ? "New York City" : LEFT([Violation County],1) == "R" ? "Richmond" : LEFT([Violation County],2) == "BK" ? "Brooklyn" : LEFT([Violation County],1) == "S" ? "Staten Island" : RIGHT([Violation County],1) == "X" ? "Bronx" : LEFT([Violation County],1) == "N" ? "New York City" : "N/A"</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>

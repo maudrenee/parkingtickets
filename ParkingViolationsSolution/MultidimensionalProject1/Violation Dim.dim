@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5919cfb0-a436-4cf4-b8e2-7f0800cb3729" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="365619cb-99e9-463a-9796-9041effdbc02" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Violation Dim</ID>
   <Name>Violation Dim</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,68 +68,68 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3e18e701-375e-4440-9660-30641f0269e4">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bf26477f-10a5-42b2-ba09-30e673d59d6e">
     <DataSourceViewID>Parking Violations DB</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="b5e9ace7-abe5-4bae-b89f-a8d99fc1b309">
+  <ErrorConfiguration dwd:design-time-name="b0c7b048-deb7-4fa1-8d58-8dcf2c7ba158">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="35c234c3-8859-4e89-b1d3-6bb73ccb5fb4">
+    <Attribute dwd:design-time-name="5ad6f862-e5d9-4854-9405-7949a4b8b3e3">
       <ID>Violation Code</ID>
       <Name>Violation Code</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7591cdc0-9d74-4716-a4c9-659b2264ee83">
+        <KeyColumn dwd:design-time-name="9336a146-bd18-45ff-a137-e98577405c1a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="89c4c04e-f295-40fd-b1b4-ac291439aa38">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5257e093-33d5-40ca-b877-f7d269feb362">
             <TableID>dbo_ViolationDim</TableID>
             <ColumnID>Violation_x0020_Code</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="088d8954-4878-4215-be73-7d57787d041a">
-          <AttributeID>Parking Fine</AttributeID>
-          <Name>Parking Fine</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c7b279c7-906f-473e-b14b-a38fce29c0c5">
+        <AttributeRelationship dwd:design-time-name="4099560b-4a42-4a72-afe9-ddbbc52cbd44">
           <AttributeID>Violation Description</AttributeID>
           <Name>Violation Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0debe226-b620-457b-9644-a705f80ae03d">
+          <AttributeID>Parking Fine</AttributeID>
+          <Name>Parking Fine</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="aedfef3e-f066-4a9a-9f8d-4751572967a6">
-      <ID>Parking Fine</ID>
-      <Name>Parking Fine</Name>
+    <Attribute dwd:design-time-name="9a1ef33f-7003-4ccc-9737-59a0c3f09528">
+      <ID>Violation Description</ID>
+      <Name>Violation Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="21e61f52-1572-4596-b46a-c075be6ca1f6">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fedcfab-9038-494d-badc-0ca1b51327dc">
+        <KeyColumn dwd:design-time-name="09683170-9fea-47ed-bfbe-eb266010e4a4">
+          <DataType>WChar</DataType>
+          <DataSize>90</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d006838-1992-48ae-a6f5-6900fd8cbc9d">
             <TableID>dbo_ViolationDim</TableID>
-            <ColumnID>ParkingFine</ColumnID>
+            <ColumnID>Violation_x0020_Description</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0d3c90ca-f6a0-4d98-83a8-5137eda42a68">
-      <ID>Violation Description</ID>
-      <Name>Violation Description</Name>
+    <Attribute dwd:design-time-name="c743e440-a313-44d8-89c8-eb8ee41afef3">
+      <ID>Parking Fine</ID>
+      <Name>Parking Fine</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0806c207-be48-42cb-a533-f53d6fb5f0d9">
-          <DataType>WChar</DataType>
-          <DataSize>90</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="79dc2ecf-6cf1-458c-8c63-2dd9cce969f3">
+        <KeyColumn dwd:design-time-name="08eefb5e-9cd0-44c7-8907-69180b0c9bdd">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65611d54-6dbe-4621-acdf-7104cca40105">
             <TableID>dbo_ViolationDim</TableID>
-            <ColumnID>Violation_x0020_Description</ColumnID>
+            <ColumnID>ParkingFine</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

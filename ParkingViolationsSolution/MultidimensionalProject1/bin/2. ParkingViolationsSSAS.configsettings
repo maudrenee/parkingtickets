@@ -21,10 +21,10 @@
         <ID>Violation Dim</ID>
       </Dimension>
       <Dimension>
-        <ID>Time Dim</ID>
+        <ID>Date Dim</ID>
       </Dimension>
       <Dimension>
-        <ID>Date Dim</ID>
+        <ID>Time Dim</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
