@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="VC_Dim_Load"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{D4577275-517D-49D4-AA71-171C11F3C312}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{92ACE5AC-7104-46D7-A57C-F322ABF88993}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -94,7 +94,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[Violation Code]"
-                      dataType="i2"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[Violation Code]"
@@ -107,13 +107,13 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[Violation Description]"
-                      length="90"
+                      length="50"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[Violation Description]"
                       name="Violation Description"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[ParkingFine]"
-                      dataType="r8"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[ParkingFine]"
@@ -125,12 +125,12 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[Violation Code]"
-                      dataType="i2"
+                      dataType="i4"
                       name="Violation Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[Violation Description]"
                       dataType="wstr"
-                      length="90"
+                      length="50"
                       name="Violation Description" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].ExternalColumns[ParkingFine]"
@@ -145,13 +145,13 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[Violation Code]"
-                      dataType="i2"
+                      dataType="i4"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[Violation Code]"
                       name="Violation Code" />
                     <outputColumn
                       refId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[Violation Description]"
                       dataType="wstr"
-                      length="90"
+                      length="50"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Error Output].Columns[Violation Description]"
                       name="Violation Description" />
                     <outputColumn
@@ -251,19 +251,19 @@
                     <inputColumn
                       refId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].Columns[Violation Description]"
                       cachedDataType="wstr"
-                      cachedLength="90"
+                      cachedLength="50"
                       cachedName="Violation Description"
                       externalMetadataColumnId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].ExternalColumns[Violation Description]"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[Violation Description]" />
                     <inputColumn
                       refId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].Columns[Violation Code]"
-                      cachedDataType="i2"
+                      cachedDataType="i4"
                       cachedName="Violation Code"
                       externalMetadataColumnId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].Columns[ParkingFine]"
-                      cachedDataType="r8"
+                      cachedDataType="i4"
                       cachedName="ParkingFine"
                       externalMetadataColumnId="Package\Data Flow Task\VC DIM LOAD.Inputs[OLE DB Destination Input].ExternalColumns[ParkingFine]"
                       lineageId="Package\Data Flow Task\Staging VC.Outputs[OLE DB Source Output].Columns[ParkingFine]" />

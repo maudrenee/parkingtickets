@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="VCLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{5D348B88-44AC-4228-B8F1-18300B23E6AB}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{1A0168EC-9D41-4A61-8A18-3AB274A9CEF5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -150,12 +150,12 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[Violation Code]"
-                      dataType="i2"
+                      dataType="i4"
                       name="Violation Code" />
                     <externalMetadataColumn
                       refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[Violation Description]"
                       dataType="wstr"
-                      length="90"
+                      length="50"
                       name="Violation Description" />
                     <externalMetadataColumn
                       refId="Package\Inladdnning av Violationscodes till SQL\Staging Area.Inputs[ADO NET Destination Input].ExternalColumns[ParkingFine]"

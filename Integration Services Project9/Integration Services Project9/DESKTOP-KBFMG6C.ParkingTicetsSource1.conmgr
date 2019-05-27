@@ -7,6 +7,6 @@
     DTS:Name="ConnectionString">@[$Project::DESKTOPKBFMG6CParkingTicetsSource1_ConnectionString1]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=DESKTOP-KBFMG6C;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=SSIS-Integration Services Project9-{704A5141-366A-4C9A-B1B6-14285539D510}DESKTOP-KBFMG6C.ParkingTicetsSource1;" />
+      DTS:ConnectionString="Data Source=DESKTOP-9A73IRP;Initial Catalog=ParkingTicetsSource;Integrated Security=True;Application Name=&quot;SSIS-Integration Services Project9-{704A5141-366A-4C9A-B1B6-14285539D510}DESKTOP-KBFMG6C.ParkingTicetsSource1&quot;;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

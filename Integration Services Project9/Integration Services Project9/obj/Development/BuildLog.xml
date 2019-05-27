@@ -2,53 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Integration Services Project9</Name>
-    <LastWriteTime>2019-05-22T21:23:05.255344Z</LastWriteTime>
+    <LastWriteTime>2019-05-27T14:17:38.6244865Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Main.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:06:50.3418834Z</LastWriteTime>
+      <LastWriteTime>2019-05-27T14:28:56.3623107Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>VCLoad.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:05:03.0129602Z</LastWriteTime>
+      <Name>CreateDim.dtsx</Name>
+      <LastWriteTime>2019-05-27T13:02:35.9783068Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>VC_Dim_Load.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:05:03.0179462Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Location_Car_Dim_Load.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:23:05.2294133Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>FactTable_Load.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:05:03.0673143Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Test_staging2015.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:06:50.3358995Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Test_staging2016.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:05:03.0219698Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>LoadFlatFile1-4(connectionM).dtsx</Name>
-      <LastWriteTime>2019-05-22T21:23:05.2244261Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2019-05-22T21:05:03.0279335Z</LastWriteTime>
+      <Name>FactLoad.dtsx</Name>
+      <LastWriteTime>2019-05-27T13:02:35.9623486Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
