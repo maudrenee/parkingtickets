@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="C:\Temp\parkingtickets\Code\ParkingViolationCodes_Nov_2018.csv">
+      DTS:ConnectionString="C:\Users\lukas\Downloads\GroupProjectFinal\Data\ParkingViolationCodes_Nov_2018.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="VIOLATION CODE"
-          DTS:DTSID="{8B99FC93-0063-4768-9B23-2C8FFD05A2A8}"
+          DTS:DTSID="{6986EF90-CCD4-40C0-B60E-4AA53AA7ADED}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="VIOLATION DESCRIPTION"
-          DTS:DTSID="{57600180-4AD6-40AA-BE8C-BFCB3A8C1F8D}"
+          DTS:DTSID="{58E47E71-1DE0-49DD-848B-8593403C0CFB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="All Areas"
-          DTS:DTSID="{7B9B9883-3C4D-4FA6-8E01-C4BACB628E23}"
+          DTS:DTSID="{B9069EA1-FEB3-4DCE-84F5-2781E29D2241}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

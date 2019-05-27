@@ -2,23 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Integration Services Project9</Name>
-    <LastWriteTime>2019-05-27T14:17:38.6244865Z</LastWriteTime>
+    <LastWriteTime>2019-05-27T18:36:46.4248006Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Main.dtsx</Name>
-      <LastWriteTime>2019-05-27T14:28:56.3623107Z</LastWriteTime>
+      <LastWriteTime>2019-05-27T18:46:18.9573086Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CreateDim.dtsx</Name>
-      <LastWriteTime>2019-05-27T13:02:35.9783068Z</LastWriteTime>
+      <LastWriteTime>2019-05-27T18:35:07.9811768Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>FactLoad.dtsx</Name>
-      <LastWriteTime>2019-05-27T13:02:35.9623486Z</LastWriteTime>
+      <LastWriteTime>2019-05-27T18:34:46.4596868Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

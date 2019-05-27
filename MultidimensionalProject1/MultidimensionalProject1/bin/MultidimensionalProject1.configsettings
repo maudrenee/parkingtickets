@@ -9,6 +9,14 @@
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
+      <DataSource>
+        <ID>Parking Violations DB</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=SKYTOP;Integrated Security=SSPI;Initial Catalog=ParkingViolationsDB</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
@@ -26,10 +34,38 @@
       <Dimension>
         <ID>Date Dim</ID>
       </Dimension>
+      <Dimension>
+        <ID>Car Dim 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Location Dim 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Date Dim 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Time Dim 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Violation Dim 1</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
         <ID>Test</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Parking Violations DB</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Fact</ID>

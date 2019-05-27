@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Parking Violations DB.cube</Name>
+      <FullPath>Parking Violations DB.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Parking Violations DB.partitions</Name>
+          <FullPath>Parking Violations DB.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -39,17 +49,45 @@
       <Name>Date Dim.dim</Name>
       <FullPath>Date Dim.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Car Dim 1.dim</Name>
+      <FullPath>Car Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Location Dim 1 1.dim</Name>
+      <FullPath>Location Dim 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 1.dim</Name>
+      <FullPath>Date Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim 1.dim</Name>
+      <FullPath>Time Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Violation Dim 1.dim</Name>
+      <FullPath>Violation Dim 1.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Test.ds</Name>
       <FullPath>Test.ds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Parking Violations DB.ds</Name>
+      <FullPath>Parking Violations DB.ds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
       <Name>Test.dsv</Name>
       <FullPath>Test.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Parking Violations DB.dsv</Name>
+      <FullPath>Parking Violations DB.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -62,11 +100,21 @@
             <Name>Test</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-9A73IRP;Integrated Security=SSPI;Initial Catalog=test</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Parking Violations DB</Id>
+            <Name>Parking Violations DB</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=SKYTOP;Integrated Security=SSPI;Initial Catalog=ParkingViolationsDB</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Test</Id>
             <Name>Test</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Parking Violations DB</Id>
+            <Name>Parking Violations DB</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>

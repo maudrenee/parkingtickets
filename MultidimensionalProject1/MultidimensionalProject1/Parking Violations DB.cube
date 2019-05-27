@@ -1,0 +1,231 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="10971a47-ff55-4e0e-b545-aedfdb59ca3a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Parking Violations DB</ID>
+  <Name>Parking Violations DB</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e706ed26-93c4-4bb1-a42e-b7dad27584ed">
+      <ID>Car Dim 1</ID>
+      <Name>Car Dim 1</Name>
+      <DimensionID>Car Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c3cc3e6d-861c-484d-89ca-420367493b61">
+          <AttributeID>Car ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e9ca60b7-869a-4874-8ff5-409180893683">
+      <ID>Location Dim 1</ID>
+      <Name>Location Dim 1</Name>
+      <DimensionID>Location Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2dff60de-fbd5-4640-9bf0-bafc74579c83">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="207fe44a-6419-45c1-b9f9-581552715e77">
+      <ID>Date Dim 1</ID>
+      <Name>Date Dim 1</Name>
+      <DimensionID>Date Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4590472d-c995-427a-9817-5f2a2ba10f8b">
+          <AttributeID>Date ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a76df4ed-4add-459e-87fd-af0d12ce8446">
+      <ID>Time Dim 1</ID>
+      <Name>Time Dim 1</Name>
+      <DimensionID>Time Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c4acbdd3-da97-4c8e-8f70-2a4d54d3b4f3">
+          <AttributeID>Time ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bdf2bed9-7f0f-4506-8f7c-51b2fa773d2f">
+      <ID>Violation Dim 1</ID>
+      <Name>Violation Dim 1</Name>
+      <DimensionID>Violation Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d90c7d0f-55ec-41a1-b662-2566d7d48d42">
+          <AttributeID>Violation Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d3c58d85-95d6-407e-874b-ea321d328a35">
+      <ID>Fact</ID>
+      <Name>Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a5d90d80-6862-4119-8780-800ad0db8be2">
+          <ID>Fact ID</ID>
+          <Name>Fact ID</Name>
+          <Source dwd:design-time-name="920a68db-2d74-412d-b0da-8276841c5d14">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5c8b1ab2-9f87-420c-93b3-b93885d3833c">
+              <TableID>dbo_Fact</TableID>
+              <ColumnID>FactID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b2d373db-c843-4de6-86b5-db3272aae6e0">
+          <ID>Fact Count</ID>
+          <Name>Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="44594af1-c8cb-4f2d-afd5-9dbf52301853">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f56af285-be39-4343-82ee-75f8d9b659e5">
+              <TableID>dbo_Fact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aeef7fe0-c9ec-4712-b5c7-53e04d8aa9a3">
+          <CubeDimensionID>Car Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="421cd292-041c-4371-b337-bcad1c54efe0">
+              <AttributeID>Car ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ddac5835-baea-452c-99ef-2a9a5cd1d0b0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41367a19-3959-4967-a2a9-4739d4bf94d9">
+                    <TableID>dbo_Fact</TableID>
+                    <ColumnID>CarID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9642f25f-1625-4994-ad95-4d0d5df39cff">
+          <CubeDimensionID>Location Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84d6c4f3-9a0b-44e7-b41b-402c8cfaa074">
+              <AttributeID>Location ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="38e15953-d1d8-4fa1-ae41-c9753209296d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c8b26a8-0614-4b10-88cf-b0d15253d7ec">
+                    <TableID>dbo_Fact</TableID>
+                    <ColumnID>LocationID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="073935e3-03ce-4c4a-8454-ade84120fa74">
+          <CubeDimensionID>Date Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="efe5f84c-e327-4972-a3a6-9aa8cecfa656">
+              <AttributeID>Date ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f4d7be8c-4fa4-4090-9cba-7c7cfb50a5ae">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f27e9ff-b1cf-4d1e-bd94-0af8baa51263">
+                    <TableID>dbo_Fact</TableID>
+                    <ColumnID>DateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ca6f7cba-2645-45ba-93be-3363abbc1f70">
+          <CubeDimensionID>Time Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="321a1b67-4e22-4e3d-9ed3-49fea37608c9">
+              <AttributeID>Time ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="60340002-27a6-432e-b40f-7b3e8bb55c66">
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9cdd902-4592-4d5c-8d76-5daefa798ae3">
+                    <TableID>dbo_Fact</TableID>
+                    <ColumnID>Violation_x0020_Time</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fb91b8cc-a844-4615-92c7-a7ac1cb5f99a">
+          <CubeDimensionID>Violation Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d0747f0-1a10-48c6-97ac-5020a1a046e8">
+              <AttributeID>Violation Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="04308abb-c106-4e21-a0a2-e0d99d0aea0d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4da44213-8d0a-40bb-bf28-abb324dcccbd">
+                    <TableID>dbo_Fact</TableID>
+                    <ColumnID>ViolationID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="4529b9f8-1eab-4779-ab9a-cf5d9e227784">
+    <DataSourceViewID>Parking Violations DB</DataSourceViewID>
+  </Source>
+</Cube>

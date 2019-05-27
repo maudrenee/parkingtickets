@@ -1,208 +1,162 @@
-
-
-
-Create Database ParkingTicetsSource
-
-
-USE [ParkingTicetsSource]
+if DB_ID ('ParkingViolationsDB') is not null
+drop database ParkingViolationsDB;
+GO
+	 
+create Database ParkingViolationsDB
+    
 GO
 
-/****** Object:  Table [dbo].[importParkingTickets]    Script Date: 2019-05-14 10:15:22 ******/
+use ParkingViolationsDB
+GO
+
+/****** Object:  Table [dbo].[ViolationDim]    Script Date: 2019-05-23 19:50:40 ******/
 SET ANSI_NULLS ON
 GO
-
+    
 SET QUOTED_IDENTIFIER ON
 GO
-
-CREATE TABLE [dbo].[importParkingTickets](
-    [Summons Number] [nvarchar](250) NULL,
-    [Plate ID] [nvarchar](250) NULL,
-    [Registration State] [nvarchar](250) NULL,
-    [Plate Type] [nvarchar](250) NULL,
-    [Issue Date] [nvarchar](250) NULL,
-    [Violation Code] [nvarchar](250) NULL,
-    [Vehicle Body Type] [nvarchar](250) NULL,
-    [Vehicle Make] [nvarchar](250) NULL,
-    [Issuing Agency] [nvarchar](250) NULL,
-    [Street Code1] [nvarchar](250) NULL,
-    [Street Code2] [nvarchar](250) NULL,
-    [Street Code3] [nvarchar](250) NULL,
-    [Vehicle Expiration Date] [nvarchar](250) NULL,
-    [Violation Location] [nvarchar](250) NULL,
-    [Violation Precinct] [nvarchar](250) NULL,
-    [Issuer Precinct] [nvarchar](250) NULL,
-    [Issuer Code] [nvarchar](250) NULL,
-    [Issuer Command] [nvarchar](250) NULL,
-    [Issuer Squad] [nvarchar](250) NULL,
-    [Violation Time] [nvarchar](250) NULL,
-    [Time First Observed] [nvarchar](250) NULL,
-    [Violation County] [nvarchar](250) NULL,
-    [Violation In Front Of Or Opposite] [nvarchar](250) NULL,
-    [House Number] [nvarchar](250) NULL,
-    [Street Name] [nvarchar](250) NULL,
-    [Intersecting Street] [nvarchar](250) NULL,
-    [Date First Observed] [nvarchar](250) NULL,
-    [Law Section] [nvarchar](250) NULL,
-    [Sub Division] [nvarchar](250) NULL,
-    [Violation Legal Code] [nvarchar](250) NULL,
-    [Days Parking In Effect    ] [nvarchar](250) NULL,
-    [From Hours In Effect] [nvarchar](250) NULL,
-    [To Hours In Effect] [nvarchar](250) NULL,
-    [Vehicle Color] [nvarchar](250) NULL,
-    [Unregistered Vehicle?] [nvarchar](250) NULL,
-    [Vehicle Year] [nvarchar](250) NULL,
-    [Meter Number] [nvarchar](250) NULL,
-    [Feet From Curb] [nvarchar](250) NULL,
-    [Violation Post Code] [nvarchar](250) NULL,
-    [Violation Description] [nvarchar](250) NULL,
-    [No Standing or Stopping Violation] [nvarchar](250) NULL,
-    [Hydrant Violation] [nvarchar](250) NULL,
-    [Double Parking Violation] [nvarchar](250) NULL,
-    [Latitude] [nvarchar](250) NULL,
-    [Longitude] [nvarchar](250) NULL,
-    [Community Board] [nvarchar](250) NULL,
-    [Community Council ] [nvarchar](250) NULL,
-    [Census Tract] [nvarchar](250) NULL,
-    [BIN] [nvarchar](250) NULL,
-    [BBL] [nvarchar](250) NULL,
-    [NTA] [nvarchar](500) NULL
-) ON [PRIMARY]
-GO
-
-CREATE TABLE [dbo].[ViolationCodes](
-[Violation Code](smallint) NOT NULL DEFAULT 
-[Violation Description](nvarchar(90)) NOT NULL DEFAULT
-[ParkingFine]() NOT NULL DEFAULT
-)
-
-
-
-
-Create Database ParkingTicketStructured
-
-
-USE [ParkingTicketStructured]
-
-GO
-
-/****** Object:  Table [dbo].[importParkingTickets]    Script Date: 2019-05-14 10:15:22 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-CREATE TABLE [dbo].[DataTable](
-    [Summons Number] [bigint] NULL, 
-    [Registration State] [nvarchar](15) NULL, 
-    [Issue Date] [date] NULL, 
-    [Violation Code] [smallint] NULL, 
-    [Vehicle Body Type] [nvarchar](6) NULL, 
-    [Vehicle Make] [nvarchar](8) NULL, 
-    [Violation Location] [nvarchar](4) NULL, 
-    [Violation Precinct] [smallint] NULL, 
-    [Violation Time] [Time]) NULL,  
-    [Violation County] [nvarchar](3) NULL,  
-    [Street Name] [nvarchar](50) NULL,   
-    [Vehicle Year] [smallint] NULL   
-) ON [PRIMARY]
-GO
-
-668
-Create table [dbo].[CarDim](
-	[CarID] [int]  IDENTITY (1,1) PRIMARY KEY,
-	[Vehicle Make] [nvarchar](8) NOT NULL DEFAULT 0,
-	[Vehicle Body Type] [nvarchar](6) NOT NULL DEFAULT 'FOO',
-	[Registration State] [nvarchar](15) NOT NULL DEFAULT 'NY',
-	[Vehicle Year] [smallint] NOT NULL DEFAULT 0
-)
- 618
-Create table [dbo].[LocationDim]( 
-	[LocationID] [int]  IDENTITY (1,1) PRIMARY KEY,
-	[Street Name] [nvarchar](50) NOT NULL DEFAULT 'Vintergatan 17',
-	[County] [nvarchar](3) NOT NULL DEFAULT 'XYZ'
-)
-
-
+    
 CREATE TABLE [dbo].[ViolationDim](
-[Violation Code] [smallint] NOT NULL DEFAULT 'N/A', 
-[Violation Description] [nvarchar](90) NOT NULL DEFAULT 'N/A',
-[ParkingFine] [float] NOT NULL DEFAULT 0
-)
-
-Create table [dbo].[Fact] (
-	[FactID] [int] IDENTITY (1,1) PRIMARY KEY,
-	[CarID] [int] NOT NULL DEFAULT 0,
-	[LocationID] [int] NOT NULL DEFAULT 0,
-	[DateID] [datetime] NOT NULL,
-	[ViolationID] [int] NOT NULL DEFAULT 0,
-	[Violation Time] [Time] NOT NULL
-)
-
-
-create table DateDim
+            [Violation Code] [int] PRIMARY KEY NOT NULL DEFAULT 0,
+            [Violation Description] [nvarchar](90) NOT NULL DEFAULT ('N/A'),
+            [ParkingFine] [float] NOT NULL DEFAULT 0
+) ON [PRIMARY]
+GO
+    
+    
+/****** Object:  Table [dbo].[LocationDim]    Script Date: 2019-05-23 19:50:01 ******/
+    
+CREATE TABLE [dbo].[LocationDim](
+            [LocationID] [int] IDENTITY(1,1) NOT NULL,
+            [County] [nvarchar](50) NOT NULL DEFAULT ('N/A'),
+PRIMARY KEY CLUSTERED
 (
-    DateID datetime2 PRIMARY KEY,
-    Year int,
-    Month int,
-    MonthName varchar(25),
-    WeekDay int,
-    WeekDayName varchar(25),
-    Week int,
-    Day int,
-    Quarter int,
-    QuarterName varchar(2),
-)
+            [LocationID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
 
--- skapa en enkel, slarvig HaKoll-tabell
-create table HaKoll
+	/****** Object:  Table [dbo].[CarDim]    Script Date: 2019-05-23 19:49:19 ******/
+    
+CREATE TABLE [dbo].[CarDim](
+            [CarID] [int] IDENTITY(1,1) NOT NULL,
+            [Registration State] [nvarchar](50) NOT NULL,
+            [Vehicle Year] [int] NOT NULL,
+            [Plate ID] [nvarchar](50) NOT NULL,
+    CONSTRAINT [PK__CarDim__68A0340E10A4870A] PRIMARY KEY CLUSTERED
 (
-namn varchar(10),
-datum datetime2
+            [CarID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+    
+ALTER TABLE [dbo].[CarDim] ADD  CONSTRAINT [DF__CarDim__Registra__47DBAE45]  DEFAULT ('NY') FOR [Registration State]
+GO
+    
+ALTER TABLE [dbo].[CarDim] ADD  CONSTRAINT [DF__CarDim__Vehicle __48CFD27E]  DEFAULT ((0)) FOR [Vehicle Year]
+GO
+
+--Skapa vår DateDim
+
+CREATE TABLE [dbo].[DateDim](
+            [DateID] [date] PRIMARY KEY NOT NULL,
+            [Year] [int] NULL,
+            [Month] [int] NULL,
+            [MonthName] [varchar](10) NULL,
+            [Weekday] [tinyint] NOT NULL,
+            [WeekdayName] [varchar](9) NOT NULL,
+            [Week] [tinyint] NOT NULL,
+            [Day] [int] NULL,
+            [Quarter] [tinyint] NOT NULL,
+            [QuarterName] [char](2) NOT NULL,
 )
+    
+DECLARE @FirstSale as datetime
+SELECT @FirstSale = '2013-05-01'
+    
+DECLARE @LastSale as datetime
+SELECT @LastSale = '2018-01-01'
+    
+    
+WHILE @FirstSale <= @LastSale
+BEGIN
+INSERT INTO ParkingViolationsDB.dbo.DateDim
+SELECT    @FirstSale,
+        YEAR(@FirstSale),
+        MONTH(@FirstSale),
+        DATENAME(Month, @FirstSale),
+        DATEPART(WEEKDAY, @FirstSale),
+        DATENAME(WEEKDAY, @FirstSale),
+        DATEPART(ISO_WEEK, @FirstSale),
+        DAY(@FirstSale),
+        DATEPART(QUARTER, @FirstSale),
+        'Q'+DATENAME(QUARTER, @FirstSale)
+SELECT @FirstSale = DATEADD(DAY, 1, @FirstSale)
+END
+GO
 
--- skapa proc för att fylla dimension
-create proc fillDateDim
-as
-begin
-    set nocount on
+-- Skapa vår TimeDim så vi får en dimension för alla minuter på dygnet.
 
-    -- variabler
-    declare @date datetime2
+Create Table TimeDim (TimeID [time](7) Primary Key, Hours [int])
 
-    insert into HaKoll values ('fill date into DateDim', getdate())
+GO
 
-    -- hämta högsta datumet för datum som finns i dim
-    select @date = dateadd(day, 1, MAX(DateID)) from datedim
+DECLARE @FirstHour as time(7)
+set @FirstHour = '00:00:00.0000000'
 
-    -- om dim-tabell är tom, ändra startdatum till innan förslj startade
-    if @date is null
-        select @date = '2013-05-01'
+DECLARE @temp as int
+set @temp = 0
 
-    -- ändra till svenska
-    set language 'english'
+WHILE @temp < 1440
+BEGIN
 
-    -- ladda dim med korrekta datum
-    while @date <= GETDATE()
-    begin
-        -- lägg in datum-delarna i tabellen
-        insert into DateDim
-            select @date,
-            YEAR(@date),
-            MONTH(@date),
-            DATENAME(MONTH, @date),
-            DATEPART(dw,@date),
-            DATENAME(WEEKDAY, @date),
-            DATEPART(wk,@date),
-            day(@date),
-            DATEPART(qq,@date),
-            'Q' + CAST(DATEPART(qq,@date) as varchar(1))
+INSERT INTO [ParkingViolationsDB].[dbo].[TimeDim]
+SELECT    @FirstHour,
+           DATEPART(HOUR,@FirstHour)
 
-        -- ta nästa dag
-        select @date = dateadd(day, 1, @date)
-    end
-end
-go
+SELECT @FirstHour = DATEADD(MINUTE, 1, @FirstHour)
+set @temp = @temp + 1
 
-exec fillDateDim
+END
+GO
+    
+/****** Object:  Table [dbo].[Fact]    Script Date: 2019-05-23 19:49:55 ******/
 
+CREATE TABLE [dbo].[Fact](
+            [FactID] [bigint] NOT NULL,
+            [CarID] [int] NOT NULL,
+            [LocationID] [int] NOT NULL,
+            [DateID] [datetime] NOT NULL,
+            [ViolationID] [int] NOT NULL,
+            [Violation Time] [time](7) NULL
+) ON [PRIMARY]
+GO
+    
+ALTER TABLE [dbo].[Fact] ADD  CONSTRAINT [DF__Fact__CarID__778AC167]  DEFAULT ((0)) FOR [CarID]
+GO
+    
+ALTER TABLE [dbo].[Fact] ADD  CONSTRAINT [DF__Fact__LocationID__787EE5A0]  DEFAULT ((0)) FOR [LocationID]
+GO
+    
+ALTER TABLE [dbo].[Fact] ADD  CONSTRAINT [DF__Fact__ViolationI__797309D9]  DEFAULT ((0)) FOR [ViolationID]
+GO
+    
+    
+GO
+    
+/****** Object:  Table [dbo].[errorRows]    Script Date: 2019-05-23 19:49:32 ******/
+    
+CREATE TABLE [dbo].[errorRows](
+            [Summons Number] [nvarchar](50) NULL,
+            [Registration State] [nvarchar](50) NULL,
+            [Issue Date] [nvarchar](50) NULL,
+            [Violation Code] [nvarchar](50) NULL,
+                
+            [Violation Time] [nvarchar](50) NULL,
+            [Violation County] [nvarchar](50) NULL,
+            [Vehicle Year] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+    
+    
+GO

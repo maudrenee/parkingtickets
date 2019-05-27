@@ -7,12 +7,12 @@
   DTS:CreatorName="Fredrik-HP\Fredrik"
   DTS:DTSID="{48D95B11-B01C-4983-9B7A-878DACAFDB6D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
   DTS:LocaleID="1053"
   DTS:ObjectName="CreateDim"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{F3388AD6-493C-4B64-8355-917FBBE5151A}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{A0895E8F-BBA9-4119-97A4-F366BC356D41}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -102,7 +102,7 @@
                 <connection
                   refId="Package\Data Flow Task\CarDim.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -378,7 +378,7 @@
                 <connection
                   refId="Package\Data Flow Task\ErrorRows 1.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -396,49 +396,49 @@
                       cachedLength="50"
                       cachedName="Summons Number"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Summons Number]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Registration State]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Registration State"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Registration State]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Issue Date]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Issue Date"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Issue Date]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Violation Code]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Violation Time]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Time"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Violation County]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Violation County]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].Columns[Vehicle Year]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Vehicle Year"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -463,21 +463,6 @@
                       length="50"
                       name="Violation Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Body Type]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Body Type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Make]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Make" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Violation Precinct]"
-                      dataType="wstr"
-                      length="50"
-                      name="Violation Precinct" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
                       dataType="wstr"
                       length="50"
@@ -487,11 +472,6 @@
                       dataType="wstr"
                       length="50"
                       name="Violation County" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Street Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Street Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 1.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
                       dataType="wstr"
@@ -585,7 +565,7 @@
                 <connection
                   refId="Package\Data Flow Task\ErrorRows 2.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -603,49 +583,49 @@
                       cachedLength="50"
                       cachedName="Summons Number"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Summons Number]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Registration State]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Registration State"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Registration State]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Issue Date]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Issue Date"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Issue Date]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Violation Code]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Violation Time]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Time"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Violation County]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Violation County]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].Columns[Vehicle Year]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Vehicle Year"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -670,21 +650,6 @@
                       length="50"
                       name="Violation Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Body Type]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Body Type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Make]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Make" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Violation Precinct]"
-                      dataType="wstr"
-                      length="50"
-                      name="Violation Precinct" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
                       dataType="wstr"
                       length="50"
@@ -694,11 +659,6 @@
                       dataType="wstr"
                       length="50"
                       name="Violation County" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Street Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Street Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 2.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
                       dataType="wstr"
@@ -792,7 +752,7 @@
                 <connection
                   refId="Package\Data Flow Task\ErrorRows 3.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -810,49 +770,49 @@
                       cachedLength="50"
                       cachedName="Summons Number"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Summons Number]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Registration State]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Registration State"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Registration State]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Issue Date]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Issue Date"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Issue Date]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Violation Code]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Violation Time]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Time"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Violation County]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Violation County]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].Columns[Vehicle Year]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Vehicle Year"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -877,21 +837,6 @@
                       length="50"
                       name="Violation Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Body Type]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Body Type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Make]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Make" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Violation Precinct]"
-                      dataType="wstr"
-                      length="50"
-                      name="Violation Precinct" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
                       dataType="wstr"
                       length="50"
@@ -901,11 +846,6 @@
                       dataType="wstr"
                       length="50"
                       name="Violation County" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Street Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Street Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 3.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
                       dataType="wstr"
@@ -999,7 +939,7 @@
                 <connection
                   refId="Package\Data Flow Task\ErrorRows 4.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1017,49 +957,49 @@
                       cachedLength="50"
                       cachedName="Summons Number"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Summons Number]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Registration State]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Registration State"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Registration State]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Issue Date]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Issue Date"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Issue Date]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Violation Code]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Violation Code]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Violation Time]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Time"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Violation County]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Violation County]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]" />
                     <inputColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].Columns[Vehicle Year]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Vehicle Year"
                       externalMetadataColumnId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1084,21 +1024,6 @@
                       length="50"
                       name="Violation Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Body Type]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Body Type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Make]"
-                      dataType="wstr"
-                      length="50"
-                      name="Vehicle Make" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Violation Precinct]"
-                      dataType="wstr"
-                      length="50"
-                      name="Violation Precinct" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Violation Time]"
                       dataType="wstr"
                       length="50"
@@ -1108,11 +1033,6 @@
                       dataType="wstr"
                       length="50"
                       name="Violation County" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Street Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Street Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\ErrorRows 4.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle Year]"
                       dataType="wstr"
@@ -1164,7 +1084,7 @@
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1184,7 +1104,7 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]} == "94" || #{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]} == "95"</property>
+                      name="Expression">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]} == "94" || #{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]} == "95"</property>
                     <property
                       containsID="true"
                       dataType="System.String"
@@ -1434,7 +1354,7 @@
                       cachedName="Violation County"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="IgnoreFailure"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -1442,7 +1362,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
+                          name="Expression">[LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "K" ? "Kings" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "M" ? "Manhattan" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "R" ? "Richmond" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},2) == "BK" ? "Brooklyn" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "S" ? "Staten Island" : [RIGHT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "X" ? "Bronx" : [LEFT](#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]},1) == "N" ? "New York City" : "N/A"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1506,50 +1426,50 @@
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Vehicle Year"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Summons Number]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Summons Number"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Issue Date]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Issue Date"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Violation Code]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Code"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Registration State]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Registration State"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Violation Time]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation Time"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Violation County]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input].Columns[Plate ID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Plate ID"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Plate ID]" />
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Plate ID]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1574,7 +1494,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1594,7 +1514,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1614,7 +1534,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1635,7 +1555,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1656,7 +1576,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1677,7 +1597,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Plate ID]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Plate ID]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1698,7 +1618,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1719,7 +1639,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1813,7 +1733,7 @@
                 <connection
                   refId="Package\Data Flow Task\LocationDim.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1912,12 +1832,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source"
+              refId="Package\Data Flow Task\ParkingViolationsSource"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1053"
-              name="Parkingtickets 2013-2014 Source"
+              name="ParkingViolationsSource"
               usesDispositions="true"
               version="1">
               <properties>
@@ -1932,24 +1852,24 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow Task\ParkingViolationsSource.Connections[FlatFileConnection]"
                   connectionManagerID="{AFF51F7F-4404-480E-BE41-64B342288E92}:external"
                   connectionManagerRefId="Project.ConnectionManagers[ParkingViolations 13-14 global]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Summons Number]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Summons Number]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Summons Number]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Summons Number]"
                       name="Summons Number"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1964,13 +1884,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Registration State]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Registration State]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Registration State]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Registration State]"
                       name="Registration State"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1985,13 +1905,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issue Date]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issue Date]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Issue Date]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Issue Date]"
                       name="Issue Date"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2006,13 +1926,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Code]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Code]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Code]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Code]"
                       name="Violation Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2027,13 +1947,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Time]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Time]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation Time]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation Time]"
                       name="Violation Time"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2048,13 +1968,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation County]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation County]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]"
                       name="Violation County"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2069,13 +1989,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Year]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Year]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Vehicle Year]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Vehicle Year]"
                       name="Vehicle Year"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2090,14 +2010,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Plate ID]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Plate ID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Plate ID]"
+                      externalMetadataColumnId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Plate ID]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Plate ID]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Plate ID]"
                       name="Plate ID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2115,307 +2035,307 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Summons Number]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Summons Number]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Summons Number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Registration State]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Registration State]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Registration State" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issue Date]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issue Date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issue Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Code]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Body Type]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Body Type]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Vehicle Body Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Make]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Make]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Vehicle Make" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Precinct]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Precinct]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Precinct" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Time]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Time]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Time" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation County]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation County]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation County" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Street Name]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Street Name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Street Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Year]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Year]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Vehicle Year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Plate ID]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Plate ID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Plate ID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Plate Type]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Plate Type]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Plate Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issuing Agency]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issuing Agency]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issuing Agency" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Street Code1]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Street Code1]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Street Code1" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Street Code2]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Street Code2]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Street Code2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Street Code3]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Street Code3]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Street Code3" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Expiration Date]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Expiration Date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Vehicle Expiration Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Location]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Location]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Location" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issuer Precinct]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issuer Precinct]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issuer Precinct" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issuer Code]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issuer Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issuer Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issuer Command]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issuer Command]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issuer Command" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Issuer Squad]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Issuer Squad]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Issuer Squad" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Time First Observed]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Time First Observed]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Time First Observed" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation In Front Of Or Opposite]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation In Front Of Or Opposite]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation In Front Of Or Opposite" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[House Number]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[House Number]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="House Number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Intersecting Street]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Intersecting Street]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Intersecting Street" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Date First Observed]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Date First Observed]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Date First Observed" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Law Section]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Law Section]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Law Section" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Sub Division]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Sub Division]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Sub Division" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Legal Code]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Legal Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Legal Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Days Parking In Effect    ]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Days Parking In Effect    ]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Days Parking In Effect    " />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[From Hours In Effect]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[From Hours In Effect]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="From Hours In Effect" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[To Hours In Effect]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[To Hours In Effect]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="To Hours In Effect" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Vehicle Color]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Vehicle Color]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Vehicle Color" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Unregistered Vehicle?]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Unregistered Vehicle?]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Unregistered Vehicle?" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Meter Number]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Meter Number]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Meter Number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Feet From Curb]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Feet From Curb]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Feet From Curb" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Post Code]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Post Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Post Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Violation Description]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Violation Description]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Violation Description" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[No Standing or Stopping Violation]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[No Standing or Stopping Violation]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="No Standing or Stopping Violation" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Hydrant Violation]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Hydrant Violation]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Hydrant Violation" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Double Parking Violation]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Double Parking Violation]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Double Parking Violation" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Latitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Longitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Community Board]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Community Board]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Community Board" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Community Council ]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Community Council ]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Community Council " />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[Census Tract]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[Census Tract]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Census Tract" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[BIN]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[BIN]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="BIN" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[BBL]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[BBL]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="BBL" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].ExternalColumns[NTA]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].ExternalColumns[NTA]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -2423,27 +2343,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2628,7 +2548,7 @@
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Violation County"
-                      lineageId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]">
+                      lineageId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2676,7 +2596,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output].Columns[Violation County]}</property>
+                          name="SortColumnId">#{Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output].Columns[Violation County]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2893,7 +2813,7 @@
                 <connection
                   refId="Package\Data Flow Task\ViolationDim.Connections[OleDbConnection]"
                   connectionManagerID="{649424A0-5AC4-422F-8D54-B4A502220DBE}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FREDRIK-HP_FREDRIKS_DATABAS test global]"
+                  connectionManagerRefId="Project.ConnectionManagers[DatabaseConnection SKYTOP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3024,7 +2944,7 @@
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
               endId="Package\Data Flow Task\Konverteringar av datatyper.Inputs[Data Conversion Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Parkingtickets 2013-2014 Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\ParkingViolationsSource.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output1]"
               endId="Package\Data Flow Task\Data Conversion 1.Inputs[Data Conversion Input]"
@@ -3070,7 +2990,7 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
-          TopLeft="224,164" />
+          TopLeft="176,74" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3079,42 +2999,6 @@
     <LayoutInfo>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="311,42"
-          Id="Package\Data Flow Task\Filtrera bort de rader med violation Code 94 &amp; 95"
-          TopLeft="165,322" />
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Data Flow Task\Konverterar Counties"
-          TopLeft="232,402" />
-        <NodeLayout
-          Size="233,42"
-          Id="Package\Data Flow Task\Parkingtickets 2013-2014 Source"
-          TopLeft="202,23" />
-        <NodeLayout
-          Size="120,42"
-          Id="Package\Data Flow Task\Multicast"
-          TopLeft="254,467" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Data Flow Task\Sort 1"
-          TopLeft="409,472" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Data Flow Task\Data Conversion 1"
-          TopLeft="895,98" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Data Flow Task\ViolationDim"
-          TopLeft="909,551" />
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 1"
-          TopLeft="550,98" />
-        <NodeLayout
-          Size="396,42"
-          Id="Package\Data Flow Task\Filtrerar bort Issue Date som inte ingår i vårt önskade Tids-intervall"
-          TopLeft="121,168" />
         <NodeLayout
           Size="296,42"
           Id="Package\Data Flow Task\Filtrera bort Vehicle Year utanför rimligt range"
@@ -3133,24 +3017,180 @@
           TopLeft="115,469" />
         <NodeLayout
           Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 2"
-          TopLeft="547,169" />
+          Id="Package\Data Flow Task\ErrorRows 4"
+          TopLeft="678,318" />
         <NodeLayout
           Size="187,42"
           Id="Package\Data Flow Task\Violation Codes Source"
           TopLeft="889,23" />
         <NodeLayout
+          Size="165,42"
+          Id="Package\Data Flow Task\Data Conversion 1"
+          TopLeft="895,98" />
+        <NodeLayout
+          Size="311,42"
+          Id="Package\Data Flow Task\Filtrera bort de rader med violation Code 94 &amp; 95"
+          TopLeft="165,322" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Data Flow Task\Konverterar Counties"
+          TopLeft="232,402" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Data Flow Task\ParkingViolationsSource"
+          TopLeft="202,23" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="409,472" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="254,467" />
+        <NodeLayout
           Size="137,42"
           Id="Package\Data Flow Task\ErrorRows 3"
-          TopLeft="545,244" />
+          TopLeft="680,241" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Data Flow Task\ViolationDim"
+          TopLeft="909,551" />
+        <NodeLayout
+          Size="396,42"
+          Id="Package\Data Flow Task\Filtrerar bort Issue Date som inte ingår i vårt önskade Tids-intervall"
+          TopLeft="121,168" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Data Flow Task\ErrorRows 1"
+          TopLeft="670,98" />
         <NodeLayout
           Size="113,42"
           Id="Package\Data Flow Task\CarDim"
           TopLeft="101,549" />
         <NodeLayout
           Size="137,42"
-          Id="Package\Data Flow Task\ErrorRows 4"
-          TopLeft="547,324" />
+          Id="Package\Data Flow Task\ErrorRows 2"
+          TopLeft="674,166" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Conditional Split Default Output1]"
+          TopLeft="517,188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157,0"
+              Start="0,0"
+              End="149.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="149.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.13609374999999,5,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Conditional Split Default Output]"
+          TopLeft="472,263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="208,0"
+              Start="0,0"
+              End="200.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="200.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="29.63609375,5,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 12]"
+          TopLeft="322.25,285">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.2180859375,9.97314453125,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 11]"
+          TopLeft="476,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="202,0"
+              Start="0,0"
+              End="194.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="194.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="82.0319140625,5,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 1]"
+          TopLeft="321.5,210">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.2180859375,7.97314453125,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output1]"
           TopLeft="460.5,514">
@@ -3263,18 +3303,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="316.5,65">
+          TopLeft="297.5,65">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34"
+              EndConnector="17,34"
               Start="0,0"
-              End="0,26.5">
+              End="17,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5" />
+                    End="0,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13"
+                    Point2="0,17"
+                    Point3="4,17" />
+                  <mssgle:LineSegment
+                    End="13,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13,17"
+                    Point2="17,17"
+                    Point3="17,21" />
+                  <mssgle:LineSegment
+                    End="17,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3355,21 +3407,21 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="130,0"
+              EndConnector="250,0"
               Start="0,0"
-              End="122.5,0">
+              End="242.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="122.5,0" />
+                    End="242.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-4.83638671874999,5,132.1727734375,11.43359375"
+              BoundingBox="55.16361328125,5,132.1727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3397,129 +3449,48 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Conditional Split Default Output1]"
-          TopLeft="517,189.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="30,0"
-              Start="0,0"
-              End="22.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="22.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-59.36390625,5,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Conditional Split Default Output]"
-          TopLeft="472,264.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73,0"
-              Start="0,0"
-              End="65.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="65.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-37.86390625,5,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Case 12]"
-          TopLeft="322.25,285">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37"
-              Start="0,0"
-              End="0,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.2180859375,9.97314453125,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Case 11]"
-          TopLeft="476,344">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="71,0"
-              Start="0,0"
-              End="63.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="63.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="16.5319140625,5,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Case 1]"
-          TopLeft="321.5,210">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.2180859375,7.97314453125,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\LocationDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ErrorRows 4">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ErrorRows 3">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\ViolationDim">
     <Properties>
@@ -3547,45 +3518,6 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\LocationDim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 2">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 3">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\CarDim">
     <Properties>
       <Property>
@@ -3599,7 +3531,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ErrorRows 4">
+    design-time-name="Package\Data Flow Task\ErrorRows 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
