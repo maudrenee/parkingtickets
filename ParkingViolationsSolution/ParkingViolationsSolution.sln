@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "1. ParkingViolationsSSIS", "Integration Services Project9\1. ParkingViolationsSSIS.dtproj", "{76EB80F3-167D-46A2-8934-18C72E484443}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "2. ParkingViolationsSSAS", "MultidimensionalProject1\2. ParkingViolationsSSAS.dwproj", "{C4B39F4B-4811-4674-98D7-97B56870A93C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76EB80F3-167D-46A2-8934-18C72E484443}.Development|Default.ActiveCfg = Development
+		{76EB80F3-167D-46A2-8934-18C72E484443}.Development|Default.Build.0 = Development
+		{C4B39F4B-4811-4674-98D7-97B56870A93C}.Development|Default.ActiveCfg = Development
+		{C4B39F4B-4811-4674-98D7-97B56870A93C}.Development|Default.Build.0 = Development
+		{C4B39F4B-4811-4674-98D7-97B56870A93C}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F140EF34-E97B-4AB7-9134-85484AFEFB46}
+	EndGlobalSection
+EndGlobal
